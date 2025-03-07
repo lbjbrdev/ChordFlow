@@ -1,0 +1,30 @@
+{
+    "compilerOptions": {
+      "target": "ES6",
+      "module": "CommonJS",
+      "outDir": "./dist",
+      "rootDir": "./src",
+      "strict": true,
+      "baseUrl": "./",
+      "esModuleInterop": true,  // Adicionado para permitir o uso de `import` no estilo ES6
+      "skipLibCheck": true,     // Adicionado para evitar problemas de tipagem de bibliotecas
+      "paths": {
+        "@application/*": [
+          "src/application/*"
+        ],
+        "@domain/*": [
+          "src/domain/*"
+        ],
+        "@infrastructure/*": [
+          "src/infrastructure/*"
+        ],
+        "@presentation/*": [
+          "src/presentation/*"
+        ],
+        "@shared/*": [
+          "src/shared/*"
+        ]
+      }
+    }
+  }
+  
